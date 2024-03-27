@@ -39,8 +39,15 @@ const Projects: React.FC = () => {
   ) : (
     <div data-testid="projects">
       <ProjectsIntro>
-        “Talk is cheap. Show me the code”? I got you. <br />
-        Here are some of my projects you shouldn't misss
+        제가 개발하였던 프로젝트 리스트입니다. <br />
+        project go [project number] 명령어를 수행하시면 관련 링크로 이동합니다.
+        <p>
+          또한 블로그 내부 프로젝트 카테고리에서 개발 과정 및 이슈사항 또한
+          확인해 보실 수 있습니다.
+        </p>
+        <div>
+          blog: <a href="https://bes99.tistory.com/">Tistory</a>
+        </div>
       </ProjectsIntro>
       {projects.map(({ id, title, desc }) => (
         <ProjectContainer key={id}>
@@ -56,27 +63,27 @@ const Projects: React.FC = () => {
 const projects = [
   {
     id: 1,
-    title: "Sat Naing's Blog",
-    desc: "My personal blog where I can write down my thoughts and experiences.",
-    url: "https://satnaing.dev/blog/",
+    title: "MSA 기반 축구 스쿼드 관리 앱 개발",
+    desc: "세종대학교 축구 동아리 관리 앱을 개발",
+    url: "https://github.com/FootballManagementMSA",
   },
   {
     id: 2,
-    title: "Haru Fashion",
-    desc: "An ecommerce web application where users can browse various products and make purchases.",
-    url: "https://haru-fashion.vercel.app/",
+    title: "Image Classification을 활용한 피부질환 진단 서비스 개발",
+    desc: "개인화된 피부질환 진료 앱 서비스",
+    url: "https://bes99.tistory.com/9",
   },
   {
     id: 3,
-    title: "Haru API",
-    desc: "A RESTful API developed for the Haru fashion ecommerce project.",
-    url: "https://satnaing.github.io/haru-api/",
+    title: "생성형 AI모델 Diff-SVC 기반의 음성변환/합성 시스템 개발",
+    desc: "사용자가 원하는 목소리로 음성을 변환해주는 앱 서비스",
+    url: "https://bes99.tistory.com/7",
   },
   {
     id: 4,
-    title: "AstroPaper Blog Theme",
-    desc: "A minimal, accessible and SEO-friendly Astro blog theme.",
-    url: "https://astro-paper.pages.dev/",
+    title: "행복기숙사 학사관 정보 취합 웹 서비스 개발",
+    desc: "개인별 입사가능한 행복기숙사 및 학사관 정보 취합 웹 서비스",
+    url: "https://github.com/bes99/dormitory",
   },
 ];
 

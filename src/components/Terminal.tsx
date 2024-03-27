@@ -27,20 +27,19 @@ type Command = {
 }[];
 
 export const commands: Command = [
-  { cmd: "about", desc: "about Sat Naing", tab: 8 },
-  { cmd: "clear", desc: "clear the terminal", tab: 8 },
-  { cmd: "echo", desc: "print out anything", tab: 9 },
-  { cmd: "education", desc: "my education background", tab: 4 },
-  { cmd: "email", desc: "send an email to me", tab: 8 },
-  { cmd: "gui", desc: "go to my portfolio in GUI", tab: 10 },
-  { cmd: "help", desc: "check available commands", tab: 9 },
-  { cmd: "history", desc: "view command history", tab: 6 },
-  { cmd: "projects", desc: "view projects that I've coded", tab: 5 },
-  { cmd: "pwd", desc: "print current working directory", tab: 10 },
-  { cmd: "socials", desc: "check out my social accounts", tab: 6 },
-  { cmd: "themes", desc: "check available themes", tab: 7 },
-  { cmd: "welcome", desc: "display hero section", tab: 6 },
-  { cmd: "whoami", desc: "about current user", tab: 7 },
+  { cmd: "about", desc: "자기소개", tab: 8 },
+  { cmd: "education", desc: "학력", tab: 4 },
+  { cmd: "projects", desc: "개발한 프로젝트 보기", tab: 5 },
+  { cmd: "socials", desc: "소셜 계정 리스트 확인", tab: 6 },
+  { cmd: "clear", desc: "터미널 라인 지우기", tab: 8 },
+  { cmd: "echo", desc: "입력된 문자 출력", tab: 9 },
+  //{ cmd: "email", desc: "이메일 보내기", tab: 8 },
+  //{ cmd: "gui", desc: "GUI에서 포트폴리오 보기", tab: 10 },
+  { cmd: "help", desc: "사용 가능한 명령어 확인", tab: 9 },
+  { cmd: "history", desc: "명령어 히스토리 보기", tab: 6 },
+  //{ cmd: "pwd", desc: "현재 작업 디렉토리 출력", tab: 10 },
+  { cmd: "themes", desc: "사용 가능한 테마 확인", tab: 7 },
+  { cmd: "welcome", desc: "초기 화면 구성", tab: 6 },
 ];
 
 type Term = {

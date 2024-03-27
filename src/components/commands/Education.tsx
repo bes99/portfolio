@@ -4,7 +4,7 @@ import { Wrapper } from "../styles/Output.styled";
 const Education: React.FC = () => {
   return (
     <Wrapper data-testid="education">
-      <EduIntro>Here is my education background!</EduIntro>
+      <EduIntro>고등학교 및 학사 정보입니다.</EduIntro>
       {eduBg.map(({ title, desc }) => (
         <EduList key={title}>
           <div className="title">{title}</div>
@@ -17,16 +17,12 @@ const Education: React.FC = () => {
 
 const eduBg = [
   {
-    title: "B.Sc (Hons) in Computing",
-    desc: "Edinburgh Napier University | 2018 ~ 2019",
+    title: "High School",
+    desc: "ONYANG YONGHWA HIGH SCHOOL | 2015.03 ~ 2018.02",
   },
   {
-    title: "HND in Computing & System Development",
-    desc: "Info Myanmar University | 2016 - 2018",
-  },
-  {
-    title: "IELTS 6.5",
-    desc: "British Council Myanmar | 2017",
+    title: "bachelor's degree",
+    desc: "Intelligent Mechatronics Engineering of Sejong University  | 2018.03 ~ 2024.08(졸업예정)",
   },
 ];
 

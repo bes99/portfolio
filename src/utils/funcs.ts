@@ -134,7 +134,7 @@ export const argTab = (
 
   // 7) if input is 'socials go '
   else if (_.startsWith(inputVal, "socials go ")) {
-    ["1.Github", "2.Dev.to", "3.Facebook", "4.Instagram"].forEach(t => {
+    ["1.Github", "2.blog"].forEach(t => {
       hintsCmds = [...hintsCmds, t];
     });
     return hintsCmds;
@@ -143,10 +143,10 @@ export const argTab = (
   // 8) if input is 'projects go '
   else if (_.startsWith(inputVal, "projects go ")) {
     [
-      "1.Sat Naing's Blog",
-      "2.Haru Fashion",
-      "3.Haru API",
-      "4.AstroPaper Blog Theme",
+      "1.MSA 기반 축구 스쿼드 관리 앱 개발",
+      "2.생성형 AI모델 Diff-SVC 기반의 음성변환/합성 시스템 개발",
+      "3.Image Classification을 활용한 피부질환 진단 서비스 개발",
+      "4.행복기숙사 학사관 정보 취합 웹 서비스 개발",
     ].forEach(t => {
       hintsCmds = [...hintsCmds, t];
     });
