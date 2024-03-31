@@ -13,7 +13,6 @@ const About: React.FC = () => {
           {" "}
           터미널 환경에서 영감을 받아 포트폴리오를 구성해 보았습니다.
         </HighlightSpan>
-        !
       </p>
       <p>
         저는 <HighlightAlt>springboot 기반 백엔드 개발</HighlightAlt>을 메인으로

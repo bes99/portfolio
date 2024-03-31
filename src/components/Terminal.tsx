@@ -37,9 +37,10 @@ export const commands: Command = [
   //{ cmd: "gui", desc: "GUI에서 포트폴리오 보기", tab: 10 },
   { cmd: "help", desc: "사용 가능한 명령어 확인", tab: 9 },
   { cmd: "history", desc: "명령어 히스토리 보기", tab: 6 },
-  //{ cmd: "pwd", desc: "현재 작업 디렉토리 출력", tab: 10 },
+  { cmd: "pwd", desc: "현재 작업 디렉토리 출력", tab: 10 },
   { cmd: "themes", desc: "사용 가능한 테마 확인", tab: 7 },
   { cmd: "welcome", desc: "초기 화면 구성", tab: 6 },
+  { cmd: "whoami", desc: "about current user", tab: 7 },
 ];
 
 type Term = {

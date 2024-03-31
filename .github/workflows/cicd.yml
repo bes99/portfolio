@@ -1,0 +1,38 @@
+name: portfolio CI/CD
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch: # 테스트용 수동 실행 이벤트 추가
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Login to DockerHub
+        uses: docker/login-action@v1
+        with:
+          username: ${{secrets.DOCKER_USERNAME}}
+          password: ${{secrets.DOCKER_TOKEN}}
+      - name: build and release to DockerHub
+        env:
+          NAME: bes99 # 계정 명
+          REPO: terminal-portfolio # 레포 이름
+        run: |
+          docker build -t $REPO .
+          docker tag $REPO:latest $NAME/$REPO:latest
+          docker push $NAME/$REPO:latest
+
+  deploy:
+    needs: build
+    name: Deploy
+    runs-on: [self-hosted]
+    steps:
+      - name: Docker run
+        run: |
+          sudo docker ps -q --filter "name=terminal-portfolio" | grep -q . && sudo docker stop "terminal-portfolio" && sudo docker rmi -f "bes99/terminal-portfolio"
+          sudo docker pull bes99/terminal-portfolio
+          sudo docker run -d --name terminal-portfolio --rm -p 80:80 bes99/terminal-portfolio
