@@ -16,8 +16,8 @@ const About: React.FC = () => {
       </p>
       <p>
         저는 <HighlightAlt>springboot 기반 백엔드 개발</HighlightAlt>을 메인으로
-        개발을 진행중이며, 새로운 기술을 탐구하고 도전하는 것을 좋아합니다.
-        현재는 클라우드 아키텍처에 관심을 갖고 학습 중에 있습니다.
+        개발을 진행중이며, AI 모델 서빙용으로 Flask를 사용합니다. 현재는
+        클라우드 아키텍처에 관심을 갖고 학습 중에 있습니다.
       </p>
       <p>
         다음은 저의 기술 스택입니다.
@@ -34,6 +34,7 @@ const About: React.FC = () => {
         <br />
         - Query DSL
         <br />
+        - Flask
         <br />
         <strong>데이터베이스:</strong>
         <br />
@@ -45,6 +46,11 @@ const About: React.FC = () => {
         <br />
         - Redis
         <br />
+        <strong>infra:</strong>
+        <br />
+        - AWS (EC2, RDS, S3, Route53, ELB, VPC etc.)
+        <br />
+        - Azure (VM, SQL Database, Blob Storage)
         <br />
         <strong>메시징 및 모니터링:</strong>
         <br />
@@ -55,19 +61,25 @@ const About: React.FC = () => {
         - Grafana
         <br />
         <br />
-        <strong>클라우드 및 컨테이너:</strong>
+        <strong>컨테이너:</strong>
         <br />
         - Docker
         <br />
-        - AWS
-        <br />
-        - Azure
+        - Doceer Swarm
         <br />
         <br />
         <strong>CI/CD:</strong>
         <br />
         - GitHub Action
         <br />
+        - Jenkins
+        <br />
+        <strong>협업 툴:</strong>
+        <br />
+        - Slack
+        <br />
+        - Notion
+        <br />- Gather Town
       </p>
     </AboutWrapper>
   );
