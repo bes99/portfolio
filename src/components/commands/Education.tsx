@@ -4,7 +4,7 @@ import { Wrapper } from "../styles/Output.styled";
 const Education: React.FC = () => {
   return (
     <Wrapper data-testid="education">
-      <EduIntro>고등학교 및 학사 관련 정보입니다.</EduIntro>
+      <EduIntro>고등학교 및 학위 관련 정보입니다.</EduIntro>
       {eduBg.map(({ title, desc }) => (
         <EduList key={title}>
           <div className="title">{title}</div>

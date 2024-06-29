@@ -62,7 +62,7 @@ const projects = [
   {
     id: 1,
     title: "MSA 기반 축구 스쿼드 관리 앱 개발",
-    desc: "세종대학교 축구 동아리 관리 앱을 개발",
+    desc: "대학교 축구 동아리 관리 앱을 개발",
     url: "https://bes99.tistory.com/48",
   },
   {

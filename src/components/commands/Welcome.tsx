@@ -39,12 +39,13 @@ const Welcome: React.FC = () => {
           `}
           </PreNameMobile>
         </PreWrapper>
-        <div>Welcome to my terminal portfolio.</div>
+        <div>SKT FLY AI 열정반 변은성입니다!</div>
         <Seperator>----</Seperator>
         <div>name: 변은성</div>
         <div>age: 26</div>
         <div>
-          degree: Intelligent Mechatronics Engineering of Sejong University{" "}
+          degree: Department of Artificial Intelligence and Robotics of Sejong
+          University{" "}
         </div>
         <div>Email: pas1007@naver.com</div>
         <div>tel: 010-9435-1649</div>

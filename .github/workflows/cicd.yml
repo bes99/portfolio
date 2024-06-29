@@ -1,9 +1,9 @@
 name: portfolio CI/CD
 on:
   push:
-    branches: [main]
+    branches: [skt_fly_ai]
   pull_request:
-    branches: [main]
+    branches: [skt_fly_ai]
   workflow_dispatch: # 테스트용 수동 실행 이벤트 추가
 
 jobs:
