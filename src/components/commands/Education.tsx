@@ -22,7 +22,7 @@ const eduBg = [
   },
   {
     title: "bachelor's degree",
-    desc: "Intelligent Mechatronics Engineering of Sejong University  | 2018.03 ~ 2024.08(졸업예정)",
+    desc: "Department of Artificial Intelligence and Robotics of Sejong University  | 2018.03 ~ 2024.08(졸업예정)",
   },
 ];
 
