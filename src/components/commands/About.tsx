@@ -8,11 +8,7 @@ const About: React.FC = () => {
   return (
     <AboutWrapper data-testid="about">
       <p>
-        안녕하세요. 저는 26살 변은성입니다.{" "}
-        <HighlightSpan>
-          {" "}
-          터미널 환경에서 영감을 받아 자기소개를 구성해 보았습니다.
-        </HighlightSpan>
+        열람해주셔서 감사합니다..! <HighlightSpan> </HighlightSpan>
       </p>
       <p>
         저는 <HighlightAlt>springboot 기반 백엔드 개발</HighlightAlt>을 메인으로
@@ -24,7 +20,7 @@ const About: React.FC = () => {
       <p>
         다음은 저의 기술 스택입니다.
         <br />
-        <strong>백엔드 프레임워크:</strong>
+        <strong>Framwork:</strong>
         <br />
         - SpringBoot
         <br />
@@ -39,7 +35,7 @@ const About: React.FC = () => {
         - Flask
         <br />
         <br />
-        <strong>데이터베이스:</strong>
+        <strong>DB:</strong>
         <br />
         - MySQL
         <br />
@@ -50,14 +46,14 @@ const About: React.FC = () => {
         - Redis
         <br />
         <br />
-        <strong>infra:</strong>
+        <strong>Infra:</strong>
         <br />
         - AWS (EC2, RDS, S3, Route53, ELB, VPC etc.)
         <br />
         - Azure (VM, SQL Database, Blob Storage)
         <br />
         <br />
-        <strong>메시징 및 모니터링:</strong>
+        <strong>MQ, Monitoring:</strong>
         <br />
         - Kafka
         <br />
@@ -66,7 +62,7 @@ const About: React.FC = () => {
         - Grafana
         <br />
         <br />
-        <strong>컨테이너:</strong>
+        <strong>Container:</strong>
         <br />
         - Docker
         <br />
@@ -80,7 +76,7 @@ const About: React.FC = () => {
         - Jenkins
         <br />
         <br />
-        <strong>협업 툴:</strong>
+        <strong>Colaboration tools:</strong>
         <br />
         - Slack
         <br />
