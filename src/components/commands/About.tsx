@@ -66,7 +66,7 @@ const About: React.FC = () => {
         <br />
         - Docker
         <br />
-        - Doceer Swarm
+        - Docker Swarm
         <br />
         <br />
         <strong>CI/CD:</strong>
